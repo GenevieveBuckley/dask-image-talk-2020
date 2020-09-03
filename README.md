@@ -2,4 +2,4 @@
 
 A talk presented by Genevieve Buckley, 2020
 
-* [See the talk slides](https://genevievebuckley.github.io/pyconau-2020-talk/)
+* [See the talk slides](https://genevievebuckley.github.io/dask-image-talk-2020/)
