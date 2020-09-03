@@ -13077,8 +13077,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="dask-image:-distributed-image-processing-for-large-data">dask-image: distributed image processing for large data<a class="anchor-link" href="#dask-image:-distributed-image-processing-for-large-data">&#182;</a></h1><h2 id="Presenter:-Genevieve-Buckley">Presenter: Genevieve Buckley<a class="anchor-link" href="#Presenter:-Genevieve-Buckley">&#182;</a></h2><p><img src="imgs/dask-icon.svg#thumbnail" alt="dask logo" width="100"/></p>
+<center>
 
+# dask-image: distributed image processing for large data
+
+## Presenter: Genevieve Buckley
+
+<img src="imgs/dask-icon.svg#thumbnail" alt="dask logo" width="100"/>
+</center>
 </div>
 </div>
 </div>
@@ -13773,52 +13779,6 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">napari</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">napari</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">nbscreenshot</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[6]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&lt;function napari.utils.notebook_display.nbscreenshot(viewer, *, canvas_only=False)&gt;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Let&#39;s have a look at the images</span>
 <span class="kn">import</span> <span class="nn">napari</span>
 <span class="kn">from</span> <span class="nn">napari.utils</span> <span class="kn">import</span> <span class="n">nbscreenshot</span>
@@ -13839,7 +13799,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[7]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -13858,7 +13818,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">viewer</span><span class="o">.</span><span class="n">layers</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">visible</span> <span class="o">=</span> <span class="kc">False</span>
@@ -13875,7 +13835,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -13902,7 +13862,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">thresh</span> <span class="o">=</span> <span class="n">ndfilters</span><span class="o">.</span><span class="n">threshold_local</span><span class="p">(</span><span class="n">smoothed</span><span class="p">,</span> <span class="n">images</span><span class="o">.</span><span class="n">chunksize</span><span class="p">)</span>
@@ -13916,7 +13876,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Let&#39;s take a look at the images</span>
@@ -13934,7 +13894,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -13983,7 +13943,7 @@ https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_morphological_op
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>A morphological close operation is an erosion, followed by a dilation.</p>
+<p>A morphological opening operation is an erosion, followed by a dilation.</p>
 <p><img src="imgs/opening.png#thumbnail" alt="Opening, binary morphological operation 
 https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html
 " width="500"/></p>
@@ -13993,7 +13953,7 @@ https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_morphological_op
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">dask_image</span> <span class="kn">import</span> <span class="n">ndmorph</span>
@@ -14021,7 +13981,7 @@ https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_morphological_op
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">dask_image</span> <span class="kn">import</span> <span class="n">ndmeasure</span>
@@ -14057,7 +14017,7 @@ https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_morphological_op
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Let&#39;s look at the labels</span>
@@ -14076,7 +14036,7 @@ https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_morphological_op
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -14102,7 +14062,7 @@ https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_morphological_op
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Measure objects in images</span>
@@ -14117,7 +14077,7 @@ https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_morphological_op
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Run computation and plot results</span>
@@ -14157,7 +14117,7 @@ https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_morphological_op
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">viewer</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># close the napari viewer</span>
@@ -14240,8 +14200,9 @@ https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_morphological_op
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="imgs/dask-icon.svg#thumbnail" alt="dask logo" width="300"/>&lt;/center&gt;</p>
-
+<center>
+<img src="imgs/dask-icon.svg#thumbnail" alt="dask logo" width="300"/>
+</center>
 </div>
 </div>
 </div>
