@@ -2,7 +2,7 @@
 
 Naming conventions:
 * Call your notebook `presentation.ipynb`
-* Put your html slides in `docs/index.html`
+* Name your html slides `index.html`
 
 ## Setup
 1. Create a new virtual environment including `ipython` and `jupyter`
@@ -42,9 +42,9 @@ From the jupyter notebook interface, click 'File' > 'Download As' > 'slides (.sl
 If you want to set up github pages to automatically point to this html file:
 
 1. create a `docs/` directory in your repository,
-2. Rename the file from `presentation.slides.html` to `inde.html`
-3. Put `index.html` inside the `docs/` folder and commit it to git
-4. In the settings of your repository, enable github pages from `docs/`
+2. Rename the file from `presentation.slides.html` to `index.html`
+3. Put `index.html` in the root folder of the repository and commit it to git
+4. In the settings of your repository, enable github pages from the root of the master branch
 
 ## Further reading
 https://dzone.com/articles/creating-presentations-with-jupyter-notebook
